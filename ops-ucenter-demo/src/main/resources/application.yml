@@ -1,0 +1,8 @@
+server:
+  port: 80
+  session:
+    timeout: 1800
+spring:
+  profiles:
+    # dev prod
+    active: dev
