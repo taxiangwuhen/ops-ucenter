@@ -6,3 +6,6 @@ spring:
     password:
   session:
     store-type: none
+ops-ucenter:
+  browser:
+    loginPage: /demo-signIn.html

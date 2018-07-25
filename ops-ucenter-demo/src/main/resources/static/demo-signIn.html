@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #box{position:absolute;top:50%;left:50%;margin-top:-200px;margin-left:-185px;height:25pc;border:1px solid #e2e3e5}#box,#logo{width:370px}#logo{margin-left:40px;height:95px;color:#676a6c;font-size:30px;line-height:95px}#password,#username{width:295px;height:50px}#password,#username,.input-group{margin-left:40px}#img-submit{position:absolute;top:0;left:10px;z-index:3;margin-top:15px;width:95px;height:30px;border-radius:2px;cursor:pointer}#validateCode{padding-left:90pt;width:295px;height:55px}#verify{height:60px;border:1px solid #ededee}#btn-login,#verify{margin-left:40px;width:295px}#btn-login{margin-top:20px;height:50px}#remember{margin-top:20px;margin-left:50px;width:5pc;height:20px;color:#676a6c;font-size:15px}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+<canvas class="particle"></canvas>
+<div id="box">
+    <div id="logo">欢迎登陆OPS！</div>
+    <div id="info">
+        <form action="/authentication/form" method="post">
+            <input type="text" class="form-control" id="username" name="username" placeholder="账号:">
+            <input type="password" class="form-control" id="password" name="password" placeholder="密码:">
+            <button class="btn btn-info" id="btn-login" type="submit">登录</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
